@@ -1,0 +1,36 @@
+.container-all-video {
+  position: relative;
+  padding-top: 56.4%;
+}
+.iframe-src {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.description-videos {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+.video-item img{
+  max-width: 64px;
+}
+.container-ul {
+  list-style: none;
+}
+.list-videos img {
+  max-width: 200px;
+}
+.list-videos {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+.list-videos:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}

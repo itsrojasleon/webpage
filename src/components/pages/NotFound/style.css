@@ -1,0 +1,45 @@
+.h2 {
+  font-family: 'Baloo', cursive;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .8;
+  font-size: 50px;
+}
+.space-not-found {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.over {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  animation-name: down-space;
+  animation-duration: 1.5s;
+  background-color: rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+@keyframes down-space {
+  0% {
+    transform: translateY(-1200px);
+  }
+  100% {
+  transform: translateY(0px);
+  }
+}
+.container-off-not-found {
+  background-image: url('../../../svg/space.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}

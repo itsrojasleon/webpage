@@ -1,0 +1,45 @@
+a {
+  color: #fff;
+}
+.container-button-facebook, .container-button-github {
+  border: 1px solid #ccc;
+  width: 28%;
+  padding: 20px;
+  background-color: rgb(60,90,153);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  margin: 12px auto 12px auto;
+  cursor: pointer;
+}
+.container-button-github {
+  border: 1px solid #ccc;
+  width: 28%;
+  padding: 20px;
+  background-color: #454545;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  margin: 12px auto 12px auto;
+  cursor: pointer;
+}
+.image-button-facebook, .image-button-github {
+  width: 35px;
+}
+.link-login-with-facebook {
+  font-size: 25px;
+  color: #fff;
+}
+.link-login-with-github {
+  font-size: 25px;
+  margin-left: 10px;
+}
+@media(max-width: 720px) {
+  .container-button-facebook, .container-button-github {
+    width: 80%;
+  }
+}

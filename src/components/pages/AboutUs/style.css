@@ -1,0 +1,48 @@
+.container-video-youtube {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.image-about-us {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.text-about-us {
+  font-size: 22px;
+  font-weight: lighter;
+  width: 70%;
+  margin: 20px auto 30px auto;
+  line-height: 1.5em;
+  text-align: center;
+}
+.line-founders {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 70px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-to-founders {
+  color: #757575;
+  text-align: center;
+  font-size: 22px;
+}
+.link-to-founders:hover {
+  border-bottom: 1px solid #000;
+}
+
+@media(max-width: 720px)  {
+  .container-video-youtube {
+    width: 95%;
+  }
+  .image-about-us {
+    display: none;
+  }
+  .text-about-us {
+    width: 95%;
+  }
+}

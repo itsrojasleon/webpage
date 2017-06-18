@@ -1,0 +1,136 @@
+.btn {
+  text-align: center;
+  padding: .6em .8em .8em;
+  border: none;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 -.2em rgba(0,0,0,.2);
+  outline: 0;
+  transition: .3s;
+  will-change: transform;
+  background: lightgray;
+  font-size: 15px;
+  background-color: rgb(255,90,95);
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.btn.primary {
+  background-color: rgb(255,90,95);
+}
+h1, p {
+  text-align: center;
+  font-family: helvetica;
+}
+.go-back {
+  font-size: 25px;
+}
+.btn.warning {
+  background-color: rgb(255,90,95);
+  display: block;
+  margin: auto;
+}
+.btn:active {
+  transform: scale(.9);
+}
+.overlay {
+  background: rgba(255,255,255,.8);
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1.1s ease-in;
+}
+.click-cheet {
+  font-size: 25px;
+
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal {
+  width: 500px;
+  background-color: #ffffff;
+  padding: 2em;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 8px 8px #ddd;
+  box-sizing: border-box;
+  border-radius: .5em;
+  animation-name: super-animation;
+  animation-duration: 1.2s;
+  width: 40vw;
+  position: relative;
+}
+.cross {
+  right: 0;
+  top: 0;
+  margin-right: 10px;
+  font-size: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10%;
+  margin-top: 0;
+}
+.cross:hover {
+  cursor: pointer;
+}
+@keyframes super-animation {
+  0% {
+    transform: translateY(-3000px);
+    background-color: #029302;
+  }
+  60% {
+    transform: translateY(25px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@media(max-width: 720px) {
+  .modal {
+    width: 80vw;
+  }
+}
+@media(max-width: 520px) {
+  .modal {
+    width: 95vw;
+  }
+}
+
+/*btn-modal*/
+
+.button-open-modal {
+  text-align: center;
+  padding: .6em .8em .8em;
+  border: none;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 -.2em rgba(0,0,0,.2);
+  outline: 0;
+  transition: .3s;
+  will-change: transform;
+  background: lightgray;
+  font-size: 20px;
+  margin: auto;
+  display: block;
+  background-color: rgb(255,90,95);
+  transition: 1s;
+}
+.button-open-modal:hover {
+  opacity: .9;
+}

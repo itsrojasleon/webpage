@@ -1,0 +1,99 @@
+.form {
+  background-color: #fff;
+  width: 50%;
+  margin: 20px auto 10px auto;
+  z-index: 999;
+  color: #454545;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  animation-name: delay;
+  animation-duration: 5s;
+  margin-bottom: 20px;
+}
+@keyframes delay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+label {
+  font-size: 20px;
+}
+.text-form-principal {
+  margin-top: 12px;
+}
+input, textarea {
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px auto 30px auto;
+  border-radius: 6px;
+  font-size: 17px;
+}
+button {
+  text-align: center;
+  padding: .6em .8em .8em;
+  border: none;
+  color: white;
+  margin: 5px auto 10px auto;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 -.2em rgba(0,0,0,.2);
+  outline: 0;
+  transition: .3s;
+  will-change: transform;
+  background: #7dc800;
+  font-size: 20px;
+}
+.image-airbnb {
+  background-image: url('https://a0.muscache.com/airbnb/static/jobs/university/airterns-working-overview-98a1709b3f7cfbbaa6f800146d609e66.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.email-text {
+  font-size: 32px;
+  color: #fff;
+}
+.contenedor-texto {
+  background-color: rgba(0,0,0,.2);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.inputs[type="text"], .inputs[type="email"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  transition: .3s;
+}
+.inputs[type="text"]:focus, .inputs[type="email"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: rgb(255,90,95);
+  border-bottom: 3px solid #ddd;
+}
+.inputs {
+  transition: .3s;
+}
+.inputs.area {
+  border: 1px solid #ddd;
+}
+.inputs.area:focus {
+  outline: none;
+  font-size: 20px;
+  color: rgb(255,90,95);
+}

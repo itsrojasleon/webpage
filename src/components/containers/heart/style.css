@@ -1,0 +1,35 @@
+.heart {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+.like {
+      cursor: pointer;
+      /*width: 100px;
+      height: 100px;*/
+      width: 75px;
+      height: 75px;
+      /*background-size: x y;*/
+      background-image: url('https://afyhbw-bn1305.files.1drv.com/y4mkkKOSMZMUfB2RBM_40vZSLWKjU1dzYo20pkfGP63ZzwJlNQZX3qW3bn_dFKTA9E2D3fqSg3fUGwwM4GffuZOJWoZlyJcNDsehfgEczPDrOPMIY6KD_HLsbKlX7C7V0qwBz_e6lZerVaWZrpQwKjV1uIr65HbrBE9rKzHqwiOvUfzivdWN4JSBZZ4MgyH9pMDLDCSWpF-VMYesIf7z7sO4A?width=3600&height=124&cropmode=none');
+      background-size: 2175px 75px;
+    }
+    .like.is-liked {
+      animation-name: like;
+      /*animation-duration: 800ms;*/
+      animation-duration: .8s;
+      /*2900 / 29 = 100px*/
+      animation-timing-function: steps(28);
+      /*background-position: -2800px 0;*/
+      /*background-position: right;*/
+      animation-fill-mode: forwards;
+    }
+    @keyframes like {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: right;
+        /*background-position: -2800px 0;*/
+      }
+    }

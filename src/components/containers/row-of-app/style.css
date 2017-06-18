@@ -1,0 +1,38 @@
+.container-icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.icons-index {
+  width: 50%;
+}
+.title {
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Khula', sans-serif;
+}
+.title-you {
+  font-size: 23px;
+}
+.text-of-icons {
+  color: rgb(150,150,153);
+  font-size: 18px;
+  font-family: 'Khula', sans-serif;
+}
+@media(max-width: 720px) {
+  .container-icons {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+  .image-icon {
+    width: 20%;
+  }
+  .icons-index {
+    width: 100%;
+  }
+}

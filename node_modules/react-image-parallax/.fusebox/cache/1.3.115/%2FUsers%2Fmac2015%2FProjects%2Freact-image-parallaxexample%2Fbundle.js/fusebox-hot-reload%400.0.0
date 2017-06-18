@@ -1,0 +1,38 @@
+FuseBox.pkg("fusebox-hot-reload", {}, function(___scope___){
+___scope___.file("index.js", function(exports, require, module, __filename, __dirname){ 
+
+const Client = require("fusebox-websocket").SocketClient;
+
+module.exports = {
+    connect: (port) => {
+
+        if (FuseBox.isServer) {
+            return;
+        }
+        port = port || window.location.port;
+        let client = new Client({
+            port: port
+        });
+        client.connect();
+        console.log("connecting...");
+        client.on("source-changed", (data) => {
+            console.log(`Updating "${data.path}" ...`);
+            if (data.type === "js") {
+                FuseBox.flush();
+                FuseBox.dynamic(data.path, data.content);
+                if (FuseBox.mainFile) {
+                    FuseBox.import(FuseBox.mainFile)
+                }
+            }
+            if (data.type === "css" && __fsbx_css) {
+                __fsbx_css(data.path, data.content)
+            }
+        })
+        client.on("error", (erro) => {
+            console.log(error);
+        });
+    }
+}
+});
+return ___scope___.entry = "index.js";
+});

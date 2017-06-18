@@ -1,0 +1,27 @@
+.container-off-render {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.text-render {
+  font-size: 20px;
+  font-family: 'Baloo', cursive;
+}
+.button-render {
+  text-align: center;
+  padding: .6em .8em .8em;
+  border: none;
+  color: white;
+  margin: 5px auto 10px auto;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 -.2em rgba(0,0,0,.2);
+  outline: 0;
+  transition: .3s;
+  will-change: transform;
+  background: #26A69A;
+  font-size: 20px;
+}
+.text-link {
+  color: #fff;
+}

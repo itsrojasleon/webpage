@@ -1,0 +1,20 @@
+.react-rater {
+  display: inline-block;
+  line-height: normal; }
+  .react-rater a {
+    cursor: pointer;
+    color: #ccc;
+    position: relative; }
+    .react-rater a.will-be-active {
+      color: #666; }
+    .react-rater a.is-active {
+      color: #000; }
+    .react-rater a.is-active-half:before {
+      color: #000;
+      content: '\2605';
+      position: absolute;
+      left: 0;
+      width: 50%;
+      overflow: hidden; }
+    .react-rater a.is-disabled {
+      cursor: default; }

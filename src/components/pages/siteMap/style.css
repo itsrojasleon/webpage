@@ -1,0 +1,28 @@
+.map-of-webpage {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  width: 70%;
+  overflow: hidden;
+  margin: auto;
+}
+.map-of-webpage iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.ubication {
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  width: 50%;
+  margin: 10px auto 30px auto;
+  padding-bottom: 20px;
+}
+@media(max-width: 720px) {
+  .map-of-webpage {
+    width: 99%;
+  }
+}
